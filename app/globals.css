@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #070707;
+  --foreground: #ffffff;
+  --secondary: #111111;
+  --gold: #C8A96B;
+  --bronze: #A77A3C;
+  --accent: #E8C88D;
+  --muted-text: #B8B8B8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A96B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8C88D;
+}
+
+/* Smooth Lenis configuration */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Glassmorphism utility */
+.glassmorphic {
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 169, 107, 0.15);
+}
+
+.glassmorphic-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glassmorphic-hover:hover {
+  background: rgba(17, 17, 17, 0.85);
+  border-color: rgba(200, 169, 107, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(200, 169, 107, 0.05);
+}
+
+/* Premium Gold Text Reveal */
+.text-reveal-gold {
+  background: linear-gradient(135deg, #ffffff 0%, #B8B8B8 50%, #C8A96B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
