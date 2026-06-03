@@ -93,8 +93,7 @@ export default function Contact() {
                 <Mail className="text-gold h-5 w-5 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider">Email Communications</h4>
-                  <p className="text-mutedText mt-1">General: info@sarathiclay.com</p>
-                  <p className="text-mutedText">Exports: exports@sarathiclay.com</p>
+                  <p className="text-mutedText mt-1">General & Exports: sarathimicron@gmail.com</p>
                 </div>
               </div>
 
@@ -102,16 +101,22 @@ export default function Contact() {
                 <Phone className="text-gold h-5 w-5 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider">Direct Phone Desk</h4>
-                  <p className="text-mutedText mt-1">Domestic: +91 98765 43210</p>
-                  <p className="text-mutedText">International: +91 98765 43211</p>
+                  <p className="text-mutedText mt-1">Sales & Support: +91 99043 73330</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 p-5 bg-[#111111]/40 border border-white/5 rounded-xl">
                 <MessageSquare className="text-gold h-5 w-5 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-white uppercase tracking-wider">WhatsApp support desk</h4>
-                  <p className="text-mutedText mt-1">Live Technical Advisor: +91 98765 43212</p>
+                  <h4 className="font-bold text-white uppercase tracking-wider">WhatsApp Support Desk</h4>
+                  <a 
+                    href="https://wa.me/919904373330"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-mutedText mt-1 hover:text-gold transition-colors inline-block underline"
+                  >
+                    Chat Live: +91 99043 73330
+                  </a>
                 </div>
               </div>
 
@@ -119,9 +124,14 @@ export default function Contact() {
                 <MapPin className="text-gold h-5 w-5 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider">Factory & HQ Location</h4>
-                  <p className="text-mutedText mt-1">
+                  <a 
+                    href="https://maps.app.goo.gl/cNDF6xQuGvCxzzdS6?g_st=am"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-mutedText mt-1 hover:text-gold transition-colors inline-block underline"
+                  >
                     Sarathi Clay processing plant, Industrial Area, Bhuj-Kutch, Gujarat, India.
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

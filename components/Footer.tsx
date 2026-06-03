@@ -23,18 +23,22 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-6 md:gap-12 justify-end">
             <div className="flex flex-col gap-4">
               <span className="text-[10px] font-sans text-gold tracking-[0.2em] uppercase">HQ & Factory Desk</span>
-              <p className="text-xs text-mutedText leading-relaxed font-sans">
+              <a 
+                href="https://maps.app.goo.gl/cNDF6xQuGvCxzzdS6?g_st=am"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-mutedText leading-relaxed font-sans hover:text-gold transition-colors underline"
+              >
                 Sarathi Clay processing plant,<br />
                 Industrial Area, Bhuj-Kutch,<br />
                 Gujarat, India.
-              </p>
+              </a>
             </div>
             <div className="flex flex-col gap-4">
               <span className="text-[10px] font-sans text-gold tracking-[0.2em] uppercase">Inquiries Desk</span>
               <p className="text-xs text-mutedText leading-relaxed font-sans">
-                sales@sarathiclay.com<br />
-                exports@sarathiclay.com<br />
-                +91 98765 43210
+                sarathimicron@gmail.com<br />
+                Phone: +91 99043 73330
               </p>
             </div>
           </div>
