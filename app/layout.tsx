@@ -22,8 +22,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Sarathi Clay | Premium Industrial Clay & Minerals Export",
-  description: "Sarathi Clay is India's leading manufacturer and exporter of premium industrial clay, kaolin, ball clay, china clay, and customized mineral solutions for ceramic, sanitaryware, and tiles.",
-  keywords: ["China Clay", "Ball Clay", "Kaolin Clay", "Calcined Clay", "Washed Clay", "Ceramic Grade Clay", "Sarathi Clay", "Industrial Minerals India", "Tile Grade Clay"],
+  description: "Sarathi Clay is India's leading manufacturer and exporter of premium industrial clay, kaolin, china clay, and customized mineral solutions for ceramic, sanitaryware, and tiles.",
+  keywords: ["China Clay", "Kaolin Clay", "Calcined Clay", "Washed Clay", "Ceramic Grade Clay", "Sarathi Clay", "Industrial Minerals India", "Tile Grade Clay"],
 };
 
 export default function RootLayout({

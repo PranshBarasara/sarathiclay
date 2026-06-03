@@ -13,7 +13,7 @@ const INDUSTRIES = [
   },
   {
     title: "Sanitaryware",
-    use: "Ball Clay & Washed Clay",
+    use: "Kaolin & Washed Clay",
     desc: "Ensures casting slip fluidity, high green strength, and controlled deflocculant consumption for modern sanitaryware pressure lines."
   },
   {

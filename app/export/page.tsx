@@ -120,7 +120,7 @@ export default function ExportPage() {
   // Calculations
   const activeProduct = PRODUCTS.find(p => p.id === selectedGrade) || PRODUCTS[0];
   
-  // 1 FCL holds ~20 MT of palletized, ~25 MT of loose bulk ball clay
+  // 1 FCL holds ~20 MT of palletized, ~25 MT of loose bulk clay
   const fclCapacity = packagingType === "bulk" ? 25 : 20;
   const estimatedContainers = Math.ceil(volumeMT / fclCapacity);
   

@@ -48,7 +48,6 @@ export default function Footer() {
             <span className="text-[10px] text-gold tracking-[0.2em] uppercase">Products</span>
             <ul className="flex flex-col gap-3 text-mutedText">
               <li><Link href="/products" className="hover:text-white transition-colors">China Clay</Link></li>
-              <li><Link href="/products" className="hover:text-white transition-colors">Ball Clay</Link></li>
               <li><Link href="/products" className="hover:text-white transition-colors">Kaolin Clay</Link></li>
               <li><Link href="/products" className="hover:text-white transition-colors">Calcined Clay</Link></li>
               <li><Link href="/products" className="hover:text-white transition-colors">Washed Clay</Link></li>

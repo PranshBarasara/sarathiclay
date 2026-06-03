@@ -169,7 +169,7 @@ export default function AdminDashboard() {
   };
 
   const industriesList = ["All", "Ceramics & Tableware", "Vitrified Tiles", "Sanitaryware", "Paints & Coatings", "Plastics & Polymers", "Refractories & Glass"];
-  const productsList = ["All", "China Clay", "Ball Clay", "Kaolin Clay", "Calcined Clay", "Washed Clay", "Ceramic Grade Clay", "Tile Grade Clay", "Custom Mineral Solutions"];
+  const productsList = ["All", "China Clay", "Kaolin Clay", "Calcined Clay", "Washed Clay", "Ceramic Grade Clay", "Tile Grade Clay", "Custom Mineral Solutions"];
 
   return (
     <div className="relative min-h-screen text-white bg-[#070707] pt-28 pb-16 font-sans overflow-hidden">

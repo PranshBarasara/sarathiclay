@@ -15,17 +15,17 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Ceramic Science",
     date: "May 20, 2026",
     readTime: "6 Min Read",
-    excerpt: "How adjusting the balance between alkali fluxes and high-plasticity ball clays affects vitrification rates and green Modulus of Rupture (MOR) strength in modern tile factories.",
+    excerpt: "How adjusting the balance between alkali fluxes and high-plasticity plastic clays affects vitrification rates and green Modulus of Rupture (MOR) strength in modern tile factories.",
     content: `
 Vitrified and porcelain tiles represent some of the most mechanically demanding ceramic products. The physical performance of the green body depends entirely on the mineral composition of the clay compounding.
 
 ### The Role of Plastifying Agents
-High-plasticity ball clays are introduced to act as binders. These sedimentary clays possess fine particles (< 2 Micron) that trap water molecules, creating plasticity and lubrication during hydraulic pressing. Without sufficient plasticity, the tile body suffers from edge cracking and low green MOR, causing fractures during transit to the kiln.
+High-plasticity plastic clays are introduced to act as binders. These sedimentary clays possess fine particles (< 2 Micron) that trap water molecules, creating plasticity and lubrication during hydraulic pressing. Without sufficient plasticity, the tile body suffers from edge cracking and low green MOR, causing fractures during transit to the kiln.
 
 ### Vitrification Kinetics
 During firing (1180°C - 1220°C), alkali fluxes (K2O and Na2O present in feldspars) melt, forming a liquid glass phase that fills the voids between quartz grains. The clay minerals undergo thermal breakdown, forming needle-like mullite crystals that reinforce the glassy matrix. 
 
-By adjusting the ratio of China Clay (which provides structural alumina) and Ball Clay (providing plasticity and flux binders), manufacturers can lower firing temperatures while achieving water absorption rates below 0.1%.
+By adjusting the ratio of China Clay (which provides structural alumina) and plastic clay (providing plasticity and flux binders), manufacturers can lower firing temperatures while achieving water absorption rates below 0.1%.
     `
   },
   {

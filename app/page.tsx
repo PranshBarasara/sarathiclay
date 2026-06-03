@@ -475,7 +475,7 @@ export default function Home() {
           <Card>
             <div className="flex flex-col gap-6">
               <p className="text-xs md:text-sm text-mutedText leading-relaxed italic">
-                &ldquo;We have relied on Sarathi Clay for China Clay and custom ball clay slips for over seven years. Their chemical compositions remain steady between batches, which has cut our tile cracking rate in half. Truly premium mineral supply.&rdquo;
+                &ldquo;We have relied on Sarathi Clay for China Clay and custom ceramic clay slips for over seven years. Their chemical compositions remain steady between batches, which has cut our tile cracking rate in half. Truly premium mineral supply.&rdquo;
               </p>
               <div className="border-t border-white/5 pt-4 flex justify-between items-center text-[10px] uppercase font-mono tracking-wider">
                 <div>

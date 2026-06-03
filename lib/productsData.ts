@@ -51,44 +51,7 @@ export const PRODUCTS: Product[] = [
     ],
     industries: ["Ceramics", "Vitrified Tiles", "Paints & Coatings", "Paper & Pulp", "Plastics & Rubber"],
   },
-  {
-    id: "ball-clay",
-    name: "Ball Clay",
-    shortDesc: "Highly plastic sedimentary clay with superior binding strength.",
-    description: "Engineered by nature and classified by Sarathi, our Ball Clay is a rare, highly plastic sedimentary clay. It provides exceptional green strength, excellent workability, and fluid slip properties. The low iron and titanium content results in excellent firing characteristics, making it the perfect binder for tableware, sanitaryware, and wall tile bodies.",
-    chemicalComposition: [
-      { label: "SiO2 (Silicon Dioxide)", value: 58.20 },
-      { label: "Al2O3 (Aluminum Oxide)", value: 28.50 },
-      { label: "Fe2O3 (Iron Oxide)", value: 0.95 },
-      { label: "TiO2 (Titanium Dioxide)", value: 1.20 },
-      { label: "LOI (Loss on Ignition)", value: 9.80 },
-    ],
-    applications: [
-      "Sanitaryware casting bodies",
-      "Electrical porcelain insulators",
-      "Floor and wall tile bodies",
-      "Engobes and glazes",
-      "Refractory bricks and shapes",
-    ],
-    specs: {
-      "Modulus of Rupture (MOR)": "3.5 - 4.5 MPa (Dried at 110°C)",
-      "Residue on 45 Micron": "1.5% Max",
-      "Water of Plasticity": "32% - 35%",
-      "Fired Color": "Creamy White to Ivory (at 1200°C)",
-      "Shrinkage (Fired)": "8.5% - 10.5%",
-    },
-    qualityParams: [
-      "Daily testing of raw casting rate and viscosity profile",
-      "Continuous checking of green dry bending strength (MOR)",
-      "Uniform mineralogical composition to prevent firing cracks",
-    ],
-    packaging: [
-      "Bulk loose cargo loading",
-      "50 Kg bags on pallets",
-      "1.0 MT jumbo bags with bottom discharge spout",
-    ],
-    industries: ["Sanitaryware", "Ceramics", "Vitrified Tiles", "Electrical Insulators", "Refractories"],
-  },
+
   {
     id: "kaolin-clay",
     name: "Kaolin Clay",

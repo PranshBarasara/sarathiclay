@@ -243,7 +243,6 @@ export default function Contact() {
                           className="bg-black border border-white/10 focus:border-gold rounded px-4 py-3 outline-none text-white transition-colors disabled:opacity-50"
                         >
                           <option>China Clay</option>
-                          <option>Ball Clay</option>
                           <option>Kaolin Clay</option>
                           <option>Calcined Clay</option>
                           <option>Washed Clay</option>
