@@ -62,7 +62,7 @@ export default function Navbar() {
             <img 
               src="/logo.png" 
               alt="Sarathi Clay" 
-              className="h-12 md:h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-12 md:h-18 w-auto object-contain invert transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 
