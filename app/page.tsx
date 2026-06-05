@@ -314,12 +314,12 @@ export default function Home() {
               return (
                 <div 
                   key={step.step} 
-                  className={`flex flex-col md:flex-row items-start md:items-center relative ${
+                  className={`flex flex-col md:flex-row items-start relative ${
                     isEven ? "md:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Circle dot marker */}
-                  <div className="absolute left-[20px] md:left-1/2 w-6 h-6 rounded-full bg-[#070707] border border-gold flex items-center justify-center -translate-x-1/2 z-10 text-[9px] text-gold font-mono font-bold">
+                  <div className="absolute left-[20px] md:left-1/2 top-0.5 w-6 h-6 rounded-full bg-[#070707] border border-gold flex items-center justify-center -translate-x-1/2 z-10 text-[9px] text-gold font-mono font-bold">
                     {step.step}
                   </div>
 
@@ -327,7 +327,11 @@ export default function Home() {
                   <div className="hidden md:block w-1/2 px-12" />
 
                   {/* Active content column */}
-                  <div className="w-full md:w-1/2 pl-10 md:pl-0 md:px-12 flex flex-col gap-2">
+                  <div className={`w-full md:w-1/2 pl-10 flex flex-col gap-2 ${
+                    isEven 
+                      ? "md:pl-0 md:pr-12 md:text-right md:items-end" 
+                      : "md:pl-12 md:pr-0 md:text-left md:items-start"
+                  }`}>
                     <span className="text-[9px] font-mono text-gold tracking-widest uppercase">
                       Stage {step.step}
                     </span>
