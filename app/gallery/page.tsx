@@ -139,24 +139,27 @@ export default function Gallery() {
         <AnimatePresence>
           {selectedItem && (
             <motion.div
-              className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-6"
+              className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-6 cursor-zoom-out"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              onClick={() => setSelectedItem(null)}
             >
               <button
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-6 right-6 text-white hover:text-gold transition-colors focus:outline-none"
+                className="absolute top-6 right-6 text-white hover:text-gold transition-colors focus:outline-none z-50 p-2"
+                aria-label="Close modal"
               >
                 <X size={28} />
               </button>
 
               <motion.div
-                className="max-w-4xl w-full flex flex-col gap-4 relative"
+                className="max-w-4xl w-full flex flex-col gap-4 relative cursor-default"
                 initial={{ scale: 0.9, y: 20 }}
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.9, y: 20 }}
                 transition={{ duration: 0.3 }}
+                onClick={(e) => e.stopPropagation()}
               >
                 <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-gold/25">
                   <Image
