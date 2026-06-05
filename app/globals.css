@@ -78,3 +78,20 @@ html.lenis {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Scrollable map custom scrollbar */
+.map-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+.map-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 2px;
+}
+.map-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(200, 169, 107, 0.25);
+  border-radius: 2px;
+}
+.map-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 169, 107, 0.6);
+}
+
