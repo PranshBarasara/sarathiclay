@@ -39,7 +39,7 @@ export default function RootLayout({
         <MineralParticles />
         <SmoothScroll>
           <Navbar />
-          <main className="min-h-screen">
+          <main className="min-h-screen relative z-10">
             {children}
           </main>
           <Footer />

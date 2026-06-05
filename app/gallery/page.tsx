@@ -59,11 +59,14 @@ export default function Gallery() {
   useEffect(() => {
     if (selectedItem) {
       document.body.style.overflow = "hidden";
+      (window as any).lenis?.stop();
     } else {
       document.body.style.overflow = "";
+      (window as any).lenis?.start();
     }
     return () => {
       document.body.style.overflow = "";
+      (window as any).lenis?.start();
     };
   }, [selectedItem]);
 
