@@ -16,7 +16,7 @@ export default function Footer() {
             <img 
               src="/logo.png" 
               alt="Sarathi Clay" 
-              className="h-12 w-auto object-contain self-start"
+              className="h-16 md:h-24 w-auto object-contain self-start"
             />
             <h2 className="font-serif text-3xl md:text-5xl font-light tracking-wide leading-tight">
               Transforming Natural <br />
