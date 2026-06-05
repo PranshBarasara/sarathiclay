@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Eye } from "lucide-react";
@@ -55,6 +55,17 @@ const CATEGORIES = ["All", "Mining", "Processing", "Laboratory", "Packaging", "L
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedItem, setSelectedItem] = useState<typeof GALLERY_ITEMS[0] | null>(null);
+
+  useEffect(() => {
+    if (selectedItem) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedItem]);
 
   const filteredItems = activeCategory === "All"
     ? GALLERY_ITEMS
@@ -139,7 +150,7 @@ export default function Gallery() {
         <AnimatePresence>
           {selectedItem && (
             <motion.div
-              className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-6 cursor-zoom-out"
+              className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md flex items-center justify-center p-6 cursor-zoom-out"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -147,7 +158,7 @@ export default function Gallery() {
             >
               <button
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-6 right-6 text-white hover:text-gold transition-colors focus:outline-none z-50 p-2"
+                className="absolute top-6 right-6 text-white hover:text-gold transition-colors focus:outline-none z-[100] p-2"
                 aria-label="Close modal"
               >
                 <X size={28} />
