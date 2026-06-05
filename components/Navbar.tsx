@@ -58,12 +58,13 @@ export default function Navbar() {
         } border`}>
           
           {/* Logo */}
-          <Link href="/" className="flex items-center group">
-            <img 
-              src="/logo.png" 
-              alt="Sarathi Clay" 
-              className="h-12 md:h-18 w-auto object-contain invert transition-transform duration-300 group-hover:scale-105"
-            />
+          <Link href="/" className="flex flex-col items-start group">
+            <span className="font-serif text-base md:text-lg tracking-[0.2em] font-bold text-white transition-all group-hover:text-gold uppercase">
+              SARATHI CLAY
+            </span>
+            <span className="text-[7px] md:text-[8px] tracking-[0.4em] text-gold uppercase -mt-0.5 group-hover:text-white transition-all">
+              Premium Minerals
+            </span>
           </Link>
 
           {/* Desktop Nav Items */}

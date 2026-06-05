@@ -35,11 +35,7 @@ export default function Loader() {
           }}
         >
           <div className="w-full flex justify-between items-center text-[10px] md:text-xs tracking-[0.3em] text-gold uppercase">
-            <img 
-              src="/logo.png" 
-              alt="Sarathi Clay" 
-              className="h-10 md:h-14 w-auto object-contain invert"
-            />
+            <span>Sarathi Clay</span>
             <span>Est. 1999</span>
           </div>
 

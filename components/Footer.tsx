@@ -13,11 +13,7 @@ export default function Footer() {
         {/* Top section with grand brand slogan and contacts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16 border-b border-white/5">
           <div className="flex flex-col gap-6">
-            <img 
-              src="/logo.png" 
-              alt="Sarathi Clay" 
-              className="h-16 md:h-24 w-auto object-contain self-start invert"
-            />
+            <span className="text-[10px] font-sans text-gold tracking-[0.3em] uppercase">Sarathi Clay</span>
             <h2 className="font-serif text-3xl md:text-5xl font-light tracking-wide leading-tight">
               Transforming Natural <br />
               <span className="text-reveal-gold font-bold">Resources</span> Into Industrial <br />
