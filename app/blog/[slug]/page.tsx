@@ -81,7 +81,7 @@ export default function BlogPostDetail({ params }: PageProps) {
           <div>
             <h4 className="text-white font-bold">About the Sarathi R&D Desk</h4>
             <p className="text-mutedText mt-1">
-              This research is published by our in-house laboratories in Bhuj, Gujarat, where we engineer customized mineral compounds for global manufacturers.
+              This research is published by our in-house laboratories in Morbi, Gujarat, where we engineer customized mineral compounds for global manufacturers.
             </p>
           </div>
         </div>

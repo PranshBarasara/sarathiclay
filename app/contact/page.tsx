@@ -130,7 +130,7 @@ export default function Contact() {
                     rel="noopener noreferrer" 
                     className="text-mutedText mt-1 hover:text-gold transition-colors inline-block underline"
                   >
-                    Sarathi Clay processing plant, Industrial Area, Bhuj-Kutch, Gujarat, India.
+                    Sarathi Micron LLP, Near Khakhrechi Chowkdi, Halvad–Maliya Highway, Village Aniyari, Morbi – 363630, Gujarat, India.
                   </a>
                 </div>
               </div>

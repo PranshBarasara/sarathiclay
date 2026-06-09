@@ -33,9 +33,11 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-xs text-mutedText leading-relaxed font-sans hover:text-gold transition-colors underline"
               >
-                Sarathi Clay processing plant,<br />
-                Industrial Area, Bhuj-Kutch,<br />
-                Gujarat, India.
+                Sarathi Micron LLP<br />
+                Near Khakhrechi Chowkdi,<br />
+                Halvad–Maliya Highway,<br />
+                Village Aniyari,<br />
+                Morbi – 363630, Gujarat, India.
               </a>
             </div>
             <div className="flex flex-col gap-4">
