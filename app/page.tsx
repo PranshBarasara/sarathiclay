@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/ui/button";
 import Card from "@/components/ui/card";
-import Marquee from "@/components/ui/marquee";
+
 import WorldMap from "@/components/WorldMap";
 import { PRODUCTS } from "@/lib/productsData";
 import { 
@@ -439,31 +439,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. CLIENT INFITE MARQUEE */}
-      <section className="py-16 border-t border-b border-white/5 bg-[#0a0a0a]">
-        <div className="max-w-6xl mx-auto text-center mb-10">
-          <span className="text-[9px] tracking-[0.3em] uppercase text-gold/60 font-bold">Approved in Firing Bodies Globally</span>
-        </div>
-        <Marquee direction="left">
-          {[
-            "SOMANY CERAMICS",
-            "KAJARIA CERAMICS",
-            "CERA SANITARYWARE",
-            "HINDWARE",
-            "RAK CERAMICS",
-            "SIMPOLO VITRIFIED",
-            "ASIAN GRANITO",
-            "ORIENT BELL"
-          ].map((client) => (
-            <span 
-              key={client} 
-              className="text-base md:text-xl font-serif font-light tracking-[0.25em] text-white/40 hover:text-white transition-colors"
-            >
-              {client}
-            </span>
-          ))}
-        </Marquee>
-      </section>
+
 
       {/* 9. TESTIMONIALS */}
       <section className="py-24 md:py-32 px-6 relative">
