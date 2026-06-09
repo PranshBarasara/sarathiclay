@@ -38,7 +38,7 @@ export default function Loader() {
             <img 
               src="/logo.png" 
               alt="Sarathi Clay" 
-              className="h-8 md:h-10 w-auto object-contain invert"
+              className="h-8 md:h-10 w-auto object-contain"
             />
             <span>Est. 1999</span>
           </div>
