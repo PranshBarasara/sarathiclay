@@ -13,9 +13,8 @@ const TIMELINE = [
 ];
 
 const LEADERSHIP = [
-  { name: "Rajesh K. Patel", role: "Founder & Chairman", desc: "30+ years in mineral extraction and corporate management." },
-  { name: "Dr. Amanda Sen", role: "Chief Mineral R&D Officer", desc: "PhD in Material Science, specializing in clay rheology." },
-  { name: "Vikram R. Shah", role: "Director of Global Exports", desc: "Overseeing logistics, sea shipping, and international distributors." }
+  { name: "Mitul Patel", role: "Founder & Chairman", desc: "10+ years in mineral extraction and corporate management." },
+  { name: "Meet Patel", role: "Managing Director", desc: "Overseeing logistics, sea shipping, and international distributors." }
 ];
 
 export default function About() {
