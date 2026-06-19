@@ -12,7 +12,7 @@ export default function Contact() {
     company: "",
     email: "",
     phone: "",
-    industry: "Ceramics & Tableware",
+    industry: "Vitrified Tiles",
     product: "China Clay",
     message: ""
   });
@@ -46,7 +46,7 @@ export default function Contact() {
         company: "",
         email: "",
         phone: "",
-        industry: "Ceramics & Tableware",
+        industry: "Vitrified Tiles",
         product: "China Clay",
         message: ""
       });
@@ -235,12 +235,8 @@ export default function Contact() {
                           onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
                           className="bg-black border border-white/10 focus:border-gold rounded px-4 py-3 outline-none text-white transition-colors disabled:opacity-50"
                         >
-                          <option>Ceramics & Tableware</option>
                           <option>Vitrified Tiles</option>
                           <option>Sanitaryware</option>
-                          <option>Paints & Coatings</option>
-                          <option>Plastics & Polymers</option>
-                          <option>Refractories & Glass</option>
                         </select>
                       </div>
                       <div className="flex flex-col gap-2">

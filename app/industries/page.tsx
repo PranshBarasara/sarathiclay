@@ -15,26 +15,6 @@ const INDUSTRIES = [
     title: "Sanitaryware",
     use: "Kaolin & Washed Clay",
     desc: "Ensures casting slip fluidity, high green strength, and controlled deflocculant consumption for modern sanitaryware pressure lines."
-  },
-  {
-    title: "Tableware & Bone China",
-    use: "Hydrated China Clay",
-    desc: "Premium low-iron white clays that fire into brilliant translucent china bodies, resisting deformation under high kiln heat."
-  },
-  {
-    title: "Paints & Coatings",
-    use: "Calcined Clay & Hydrous Kaolin",
-    desc: "Serves as a high-opacity Titanium Dioxide (TiO2) extender and color spacing aid, improving dispersion profiles."
-  },
-  {
-    title: "Plastics, Rubber & Cables",
-    use: "Calcined Kaolin & Wash Clay",
-    desc: "Increases electrical volume resistivity in high-voltage cables and reinforces mechanical properties in rubber formulations."
-  },
-  {
-    title: "Refractories & Glass",
-    use: "Premium Calcined Minerals",
-    desc: "Supplies high thermal stability and fireproof properties to brick bodies, furnace shapes, and specialty glass fibers."
   }
 ];
 

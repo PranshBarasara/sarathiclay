@@ -168,7 +168,7 @@ export default function AdminDashboard() {
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  const industriesList = ["All", "Ceramics & Tableware", "Vitrified Tiles", "Sanitaryware", "Paints & Coatings", "Plastics & Polymers", "Refractories & Glass"];
+  const industriesList = ["All", "Vitrified Tiles", "Sanitaryware"];
   const productsList = ["All", "China Clay", "Kaolin Clay", "Calcined Clay", "Washed Clay", "Ceramic Grade Clay", "Tile Grade Clay", "Custom Mineral Solutions"];
 
   return (

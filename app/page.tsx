@@ -195,7 +195,7 @@ export default function Home() {
             </h2>
             
             <p className="text-xs md:text-sm text-mutedText leading-relaxed tracking-wide">
-              Sarathi Clay is India&apos;s leading manufacturer and exporter of premium industrial clay and mineral solutions. With advanced processing facilities, in-house laboratories, and stringent batch-to-batch quality management systems, we deliver high-performance materials tailored for vitrified tile, ceramic tableware, sanitaryware, paint, and high-voltage electrical insulators.
+              Sarathi Clay is India&apos;s leading manufacturer and exporter of premium industrial clay and mineral solutions. With advanced processing facilities, in-house laboratories, and stringent batch-to-batch quality management systems, we deliver high-performance materials tailored for vitrified tile and sanitaryware.
             </p>
             
             <p className="text-xs md:text-sm text-mutedText leading-relaxed tracking-wide">

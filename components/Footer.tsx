@@ -70,9 +70,6 @@ export default function Footer() {
             <ul className="flex flex-col gap-3 text-mutedText">
               <li><Link href="/industries" className="hover:text-white transition-colors">Ceramics</Link></li>
               <li><Link href="/industries" className="hover:text-white transition-colors">Vitrified Tiles</Link></li>
-              <li><Link href="/industries" className="hover:text-white transition-colors">Sanitaryware</Link></li>
-              <li><Link href="/industries" className="hover:text-white transition-colors">Glass & Refractories</Link></li>
-              <li><Link href="/industries" className="hover:text-white transition-colors">Paints & Polymers</Link></li>
             </ul>
           </div>
 
