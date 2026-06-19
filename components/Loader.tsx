@@ -35,11 +35,16 @@ export default function Loader() {
           }}
         >
           <div className="w-full flex justify-between items-center text-[10px] md:text-xs tracking-[0.3em] text-gold uppercase">
-            <img 
-              src="/logo.png" 
-              alt="Sarathi Clay" 
-              className="h-8 md:h-10 w-auto object-contain"
-            />
+            <div className="flex items-center gap-3">
+              <div className="bg-white px-2 py-0.5 rounded flex items-center justify-center">
+                <img 
+                  src="/logo.png" 
+                  alt="Sarathi Clay Logo" 
+                  className="h-6 md:h-8 w-auto object-contain"
+                />
+              </div>
+              <span>Sarathi Clay</span>
+            </div>
             <span>Est. 1999</span>
           </div>
 

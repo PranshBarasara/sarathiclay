@@ -13,11 +13,16 @@ export default function Footer() {
         {/* Top section with grand brand slogan and contacts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16 border-b border-white/5">
           <div className="flex flex-col gap-6">
-            <img 
-              src="/logo.png" 
-              alt="Sarathi Clay" 
-              className="h-12 md:h-16 w-auto object-contain self-start"
-            />
+            <div className="flex items-center gap-3">
+              <div className="bg-white px-2.5 py-1 rounded-lg flex items-center justify-center shadow-md">
+                <img 
+                  src="/logo.png" 
+                  alt="Sarathi Clay Logo" 
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
+              </div>
+              <span className="text-[10px] font-sans text-gold tracking-[0.3em] uppercase">Sarathi Clay</span>
+            </div>
             <h2 className="font-serif text-3xl md:text-5xl font-light tracking-wide leading-tight">
               Transforming Natural <br />
               <span className="text-reveal-gold font-bold">Resources</span> Into Industrial <br />

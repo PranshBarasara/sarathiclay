@@ -58,12 +58,22 @@ export default function Navbar() {
         } border`}>
           
           {/* Logo */}
-          <Link href="/" className="flex items-center group">
-            <img 
-              src="/logo.png" 
-              alt="Sarathi Clay" 
-              className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="bg-white px-2.5 py-1 rounded-lg flex items-center justify-center shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all group-hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+              <img 
+                src="/logo.png" 
+                alt="Sarathi Clay Logo" 
+                className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="font-serif text-base md:text-lg tracking-[0.2em] font-bold text-white transition-all group-hover:text-gold uppercase">
+                SARATHI CLAY
+              </span>
+              <span className="text-[7px] md:text-[8px] tracking-[0.4em] text-gold uppercase -mt-0.5 group-hover:text-white transition-all">
+                Premium Minerals
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav Items */}
