@@ -42,10 +42,14 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-4">
               <span className="text-[10px] font-sans text-gold tracking-[0.2em] uppercase">Inquiries Desk</span>
-              <p className="text-xs text-mutedText leading-relaxed font-sans">
-                sarathimicron@gmail.com<br />
-                Phone: +91 99043 73330
-              </p>
+              <div className="flex flex-col gap-1 text-xs text-mutedText leading-relaxed font-sans">
+                <a href="mailto:sarathimicron@gmail.com" className="hover:text-gold transition-colors underline">
+                  sarathimicron@gmail.com
+                </a>
+                <a href="tel:+919904373330" className="hover:text-gold transition-colors underline">
+                  Phone: +91 99043 73330
+                </a>
+              </div>
             </div>
           </div>
         </div>
