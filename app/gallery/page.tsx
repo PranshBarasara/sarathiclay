@@ -128,6 +128,12 @@ export default function Gallery() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
+              {item.id === 4 && (
+                <div className="absolute bottom-3 left-3 bg-black/85 backdrop-blur-sm border border-gold/40 px-3 py-1.5 rounded text-white font-mono flex flex-col gap-0.5 z-[5] pointer-events-none">
+                  <span className="text-[7px] text-gold tracking-widest uppercase font-bold">Specification</span>
+                  <span className="text-[9px] tracking-wider font-semibold">1 MT CHINA CLAY</span>
+                </div>
+              )}
               
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6">
@@ -182,6 +188,19 @@ export default function Gallery() {
                     fill
                     className="object-cover"
                   />
+                  {selectedItem.id === 4 && (
+                    <div className="absolute bottom-6 left-6 bg-black/90 backdrop-blur-md border border-gold/50 px-5 py-4 rounded-lg text-white font-mono flex flex-col gap-1.5 shadow-2xl">
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+                        <span className="text-[9px] text-gold tracking-[0.2em] uppercase font-bold">Jumbo Sack Markings</span>
+                      </div>
+                      <span className="text-sm tracking-wider font-bold text-white">1 MT ULTRA-WHITE CHINA CLAY</span>
+                      <div className="flex gap-4 text-[9px] text-mutedText border-t border-white/10 pt-1.5 mt-0.5">
+                        <span>GRADE: PREMIUM REFIND</span>
+                        <span>BATCH: QC-PASSED</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="flex justify-between items-start gap-6 font-sans">
                   <div>
