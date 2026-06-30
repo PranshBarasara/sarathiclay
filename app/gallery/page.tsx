@@ -11,42 +11,42 @@ const GALLERY_ITEMS = [
     title: "Mined Raw Kaolin Extraction",
     category: "Mining",
     desc: "Extraction of raw hydrous aluminum silicate clay at our Kutch reserves.",
-    image: "/premium_clay_texture.png"
+    image: "/mined_raw_kaolin.png"
   },
   {
     id: 2,
     title: "Hydrocyclone Refining Lines",
     category: "Processing",
     desc: "Computerized washing classifiers that separate grit from clay slurries.",
-    image: "/premium_clay_texture.png"
+    image: "/hydrocyclone_refining.png"
   },
   {
     id: 3,
     title: "Laser Particle Analysis",
     category: "Laboratory",
     desc: "Checking particle size distribution curve profiles to ensure slip fluidity.",
-    image: "/premium_clay_texture.png"
+    image: "/laser_particle_analysis.png"
   },
   {
     id: 4,
     title: "Automated Silos Packing",
     category: "Packaging",
-    desc: "Packaging premium calcined kaolin into moisture-barrier jumbo bags.",
-    image: "/premium_clay_texture.png"
+    desc: "Packaging premium China clay into moisture-barrier jumbo bags.",
+    image: "/automated_silos_packing.png"
   },
   {
     id: 5,
     title: "Container Stuffing at Port",
     category: "Logistics",
     desc: "Loading pallets inside containers at Mundra Port for overseas sea freight.",
-    image: "/premium_clay_texture.png"
+    image: "/container_stuffing.png"
   },
   {
     id: 6,
     title: "Continuous Ball Mills",
     category: "Processing",
     desc: "Batch alumina-lined ball mills grinding clays without iron contamination.",
-    image: "/premium_clay_texture.png"
+    image: "/continuous_ball_mills.png"
   }
 ];
 
