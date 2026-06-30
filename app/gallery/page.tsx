@@ -25,7 +25,7 @@ const GALLERY_ITEMS = [
     title: "Laser Particle Analysis",
     category: "Laboratory",
     desc: "Checking particle size distribution curve profiles to ensure slip fluidity.",
-    image: "/laser_particle_analysis.svg"
+    image: "/laser_particle_analysis.png"
   },
   {
     id: 4,
