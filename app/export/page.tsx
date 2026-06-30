@@ -43,7 +43,7 @@ const PACKAGING_OPTIONS = [
   },
   {
     id: "laminated",
-    title: "25kg / 50kg Laminated Sacks",
+    title: "50kg Laminated Sacks",
     subtitle: "Precision Batch Feeding",
     desc: "Double-walled laminated bags featuring a heat-sealed moisture barrier. Perfect for manual batch-mixing systems where precise compounding is required at the factory slip-house.",
     features: [
@@ -52,8 +52,8 @@ const PACKAGING_OPTIONS = [
       "Ultra-low moisture ingress during long sea-freight transit",
       "Highly legible chemical grade markings and batch codes"
     ],
-    dimensions: "55 x 85 cm standard sizing (50kg)",
-    weightRange: "25.0 kg or 50.0 kg net weight per bag",
+    dimensions: "55 x 85 cm standard sizing",
+    weightRange: "50.0 kg net weight per bag",
     image: "/paper_bag.png"
   },
   {
@@ -236,7 +236,7 @@ ${buyerMessage || "None"}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Serving high-performance industries across 15+ countries. Strategically situated only 50 kilometers from Mundra Port (India&apos;s maritime gateway), Sarathi Clay guarantees rapid ocean freight container dispatch, custom-sealed weather barriers, and complete regulatory compliance.
+            Serving high-performance industries across 5+ countries. Strategically situated only 50 kilometers from Mundra Port (India&apos;s maritime gateway), Sarathi Clay guarantees rapid ocean freight container dispatch, custom-sealed weather barriers, and complete regulatory compliance.
           </motion.p>
 
           <motion.div

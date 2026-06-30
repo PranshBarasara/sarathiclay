@@ -40,7 +40,7 @@ export default function Loader() {
               alt="Sarathi Clay" 
               className="h-8 md:h-10 w-auto object-contain"
             />
-            <span>Est. 1999</span>
+            <span>Est. 2018</span>
           </div>
 
           <div className="flex flex-col items-center max-w-lg text-center">

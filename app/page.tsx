@@ -23,10 +23,10 @@ import {
 
 // Statistics list for Hero
 const HERO_STATS = [
-  { value: "25+", label: "Years Experience" },
-  { value: "5000+ MT", label: "Monthly Capacity" },
-  { value: "100+", label: "Global Clients" },
-  { value: "15+", label: "Export Countries" }
+  { value: "8+", label: "Years Experience" },
+  { value: "8000+ MT", label: "Monthly Capacity" },
+  { value: "25+", label: "Global Clients" },
+  { value: "5+", label: "Export Countries" }
 ];
 
 // Why Sarathi Clay features

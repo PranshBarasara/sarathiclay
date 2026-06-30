@@ -161,7 +161,7 @@ export default function Navbar() {
               </Link>
               <div className="flex justify-between items-center text-[9px] font-sans text-mutedText tracking-[0.2em] uppercase">
                 <span>sarathi clay / global solutions</span>
-                <span>est. 1999</span>
+                <span>est. 2018</span>
               </div>
             </div>
           </motion.div>

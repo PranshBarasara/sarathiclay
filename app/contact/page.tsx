@@ -93,7 +93,12 @@ export default function Contact() {
                 <Mail className="text-gold h-5 w-5 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider">Email Communications</h4>
-                  <p className="text-mutedText mt-1">General & Exports: sarathimicron@gmail.com</p>
+                  <a 
+                    href="mailto:sarathimicron@gmail.com"
+                    className="text-mutedText mt-1 hover:text-gold transition-colors inline-block underline"
+                  >
+                    General & Exports: sarathimicron@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -101,7 +106,12 @@ export default function Contact() {
                 <Phone className="text-gold h-5 w-5 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider">Direct Phone Desk</h4>
-                  <p className="text-mutedText mt-1">Sales & Support: +91 99043 73330</p>
+                  <a 
+                    href="tel:+919904373330"
+                    className="text-mutedText mt-1 hover:text-gold transition-colors inline-block underline"
+                  >
+                    Sales & Support: +91 99043 73330
+                  </a>
                 </div>
               </div>
 

@@ -5,10 +5,8 @@ import Card from "@/components/ui/card";
 import { Leaf, Zap, UserCheck } from "lucide-react";
 
 const TIMELINE = [
-  { year: "1999", title: "Foundation Established", desc: "Sarathi Clay was founded with a single processing mill in Bhuj-Kutch, Gujarat, supplying local tile units." },
-  { year: "2007", title: "First Export Cargo", desc: "Shipped premium washed clay to Middle East ceramic markets via Mundra Port." },
-  { year: "2013", title: "Advanced Lab Launch", desc: "Setup in-house atomic absorption spectrometer facilities and particle sizing checkers." },
-  { year: "2018", title: "Star Export Status", desc: "Certified as a Star Export House by the Ministry of Commerce & Industry, Government of India." },
+  { year: "2018", title: "Foundation Established", desc: "Sarathi Clay was founded with a single processing mill in Bhuj-Kutch, Gujarat, supplying local tile units." },
+  { year: "2019", title: "Advanced Lab Launch", desc: "Setup in-house atomic absorption spectrometer facilities and particle sizing checkers." },
   { year: "2024", title: "ESG Alignment & Scaling", desc: "Replaced heavy fuel ovens with energy-efficient kilns and aligned mining with ESG landscape protocols." }
 ];
 
@@ -30,7 +28,7 @@ export default function About() {
         <div className="max-w-3xl mb-20">
           <span className="text-[10px] tracking-[0.4em] uppercase text-gold font-bold">Corporate Profile</span>
           <h1 className="font-serif text-4xl sm:text-6xl font-light tracking-wide mt-2">
-            Twenty-Five Years of <br />
+            Eight Years of <br />
             <span className="text-reveal-gold font-bold">Mineral Precision</span>
           </h1>
           <p className="text-xs md:text-sm text-mutedText leading-relaxed mt-4">

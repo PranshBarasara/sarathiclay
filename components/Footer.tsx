@@ -91,8 +91,6 @@ export default function Footer() {
             <span className="text-[10px] text-gold tracking-[0.2em] uppercase">Standards & Trust</span>
             <div className="flex flex-col gap-3 text-mutedText font-light leading-relaxed">
               <p>ISO 9001:2015 Certified Manufacturing Facility</p>
-              <p>Star Export House Certified (Govt. of India)</p>
-              <p>ROHS & REACH Compliant Mineral Quality</p>
             </div>
           </div>
         </div>
