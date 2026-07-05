@@ -46,7 +46,7 @@ const GALLERY_ITEMS = [
     title: "Continuous Ball Mills",
     category: "Processing",
     desc: "Batch alumina-lined ball mills grinding clays without iron contamination.",
-    image: "/continuous_ball_mills.png"
+    image: "/continuous_ball_mills2.png"
   }
 ];
 

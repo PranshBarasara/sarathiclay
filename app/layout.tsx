@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: "Sarathi Clay | Premium Industrial Clay & Minerals Export",
   description: "Sarathi Clay is India's leading manufacturer and exporter of premium industrial clay, kaolin, china clay, and customized mineral solutions for ceramic, sanitaryware, and tiles.",
   keywords: ["China Clay", "Kaolin Clay", "Calcined Clay", "Washed Clay", "Ceramic Grade Clay", "Sarathi Clay", "Industrial Minerals India", "Tile Grade Clay"],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({
