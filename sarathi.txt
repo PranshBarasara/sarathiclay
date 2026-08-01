@@ -1,0 +1,174 @@
+========================================================================
+                     SARATHI MICRON LLP - SYSTEM ARCHITECTURE
+                                 sarathi.txt
+========================================================================
+
+1. EXECUTIVE OVERVIEW
+------------------------------------------------------------------------
+Sarathi Micron LLP (formerly styled under Sarathi Clay) is a premium 
+Indian minerals exporter and manufacturer specializing in high-purity
+China Clay, Kaolin, Calcined Clay, and Washed Clay. This application is a 
+modern, highly interactive corporate website and administrative platform 
+designed to showcase their products, processing infrastructure, quality 
+control, global logistics, and handle direct business-to-business (B2B) 
+export inquiries.
+
+
+2. CORE TECHNOLOGY STACK
+------------------------------------------------------------------------
+The project is built using modern web development frameworks and libraries 
+to achieve a responsive layout, premium dark-themed visual aesthetics, and 
+real-time serverless backend integrations:
+
+* Framework: Next.js (version 16.2.7) utilizing App Router conventions.
+* Language: TypeScript (TS) for strict static typing.
+* UI Library: React (version 19.2.7) & React DOM.
+* Database & Backend: Supabase JS Client Client-Library (@supabase/supabase-js, version 2.106.2).
+* Animation Engines: 
+  - GSAP (GreenSock Animation Platform, version 3.15.0) and @gsap/react (version 2.1.2) for high-precision timeline-based animations.
+  - Framer Motion (version 12.4.0) for responsive layout transitions, page fades, and interactive modal overlays.
+* Scroll Management: Lenis (lenis, version 1.3.23) for smooth web scrolling and programmatical scroll-locking.
+* Icons & Vector Assets: Lucide React (version 1.17.0) for standard vector icons.
+* CSS Framework: Tailwind CSS (version 3.4.1) for utility-first styling.
+* Font Families: 
+  - Playfair Display (Serif) for headings and branding elements.
+  - Inter (Sans-serif) for body text, lists, and numbers.
+
+
+3. FILE & DIRECTORY ARCHITECTURE
+------------------------------------------------------------------------
+Below is the directory map of the codebase:
+
+D:\Sarathi\
+├── app/                      # Next.js App Router Page Routes & API Endpoints
+│   ├── about/                # Corporate Profile, Timeline & Leadership
+│   ├── admin/                # Passkey-protected administrative dashboard
+│   ├── api/                  # Serverless REST endpoints
+│   │   ├── admin/inquiries/  # Route to fetch inquiries from Supabase
+│   │   └── contact/          # Route to validate and submit contact inquiries
+│   ├── blog/                 # Corporate R&D updates & newsletters
+│   ├── contact/              # Direct contact page & active submission form
+│   ├── export/               # Logistics dashboard with interactive route calculator
+│   ├── fonts/                # Local font configurations
+│   ├── gallery/              # Media Gallery with image lightbox modal
+│   ├── globals.css           # Vanilla CSS overrides & theme variables
+│   ├── industries/           # Active industry sectors (Tiles & Sanitaryware)
+│   ├── infrastructure/       # Mine reserves, refining machinery overview
+│   ├── layout.tsx            # Global Root Layout structure
+│   ├── page.tsx              # Main homepage entry point
+│   ├── products/             # Product catalog pages
+│   └── quality/              # Testing procedures & laboratory details
+├── components/               # Globally shared React components
+│   ├── ui/                   # Modular UI kits (buttons, cards, marquees)
+│   ├── CursorGlow.tsx        # Ambient cursor overlay effect
+│   ├── Footer.tsx            # Branded footer with direct dialer & maps links
+│   ├── Loader.tsx            # Initial pre-loading animated sequence
+│   ├── MineralParticles.tsx  # Ambient floating particles background
+│   ├── Navbar.tsx            # Responsive sticky header and navigation menu
+│   ├── SmoothScroll.tsx      # Lenis smooth-scrolling initialization wrapper
+│   └── WorldMap.tsx          # Interactive SVG world map highlighting export routes
+├── lib/                      # Helper modules and shared static data
+│   ├── blogData.ts           # Structured R&D and blog articles
+│   ├── productsData.ts       # Technical spec data sheets and compositions
+│   └── supabaseClient.ts     # Supabase DB Client initialization
+├── public/                   # Static public assets (images, icons, favicons)
+│   ├── logo.png              # Wide rectangular branding logo
+│   ├── favicon.ico           # Transparent custom brand emblem browser icon
+│   └── premium_clay_texture.png # Branded product showcase image
+├── package.json              # Project dependencies, scripts & configurations
+├── tailwind.config.ts        # Design system overrides (gold/bronze colors)
+└── tsconfig.json             # TypeScript compile options
+
+
+4. COMPLETE FLOW & SYSTEM PIPELINES
+------------------------------------------------------------------------
+
+A. CLIENT INQUIRY FORM PIPELINE
+=========================================
+1. The user visits the '/contact' page.
+2. The user fills out the contact form containing:
+   - Name (Mandatory)
+   - Company (Mandatory)
+   - Email (Mandatory)
+   - Phone (Mandatory)
+   - Industry Selection (e.g. Vitrified Tiles, Sanitaryware)
+   - Product Selection (e.g. China Clay, Kaolin)
+   - Message Text (Mandatory)
+3. Upon clicking submit, a POST request is triggered to the serverless
+   endpoint '/api/contact'.
+4. The API endpoint checks that all mandatory fields are present.
+5. The API interacts with the Supabase client, inserting the record
+   into the 'inquiries' table.
+6. The client receives a 201 Created response, and displays a success
+   modal or state.
+
+B. ADMINISTRATIVE DASHBOARD PIPELINE
+=========================================
+1. An administrator navigates to '/admin'.
+2. The page prompts the administrator for an access passkey.
+3. The administrator enters the administrative passkey: "sarathi2026".
+4. The dashboard issues a GET request to '/api/admin/inquiries' with the
+   passkey passed securely inside the "x-admin-passkey" HTTP Header.
+5. The server checks that the passkey matches "sarathi2026".
+6. If authorized, the route pulls all inquiry submissions from the 
+   Supabase 'inquiries' table, ordered by 'created_at' descending.
+7. The dashboard displays the entries in a table.
+8. The administrator can:
+   - Search inquiries via search inputs.
+   - Filter inquiries by Product or Active Industry.
+   - Export all inquiries to a CSV file downloadable directly.
+
+
+5. PAGE-BY-PAGE FUNCTIONALITIES
+------------------------------------------------------------------------
+
+* HOME PAGE ('/')
+  - Displays hero statistics: 8+ Years Experience, 8000+ MT Monthly Capacity,
+    25+ Global Clients, and 5+ Export Countries.
+  - Showcases core B2B value propositions and material features.
+
+* CORPORATE PROFILE ('/about')
+  - Displays the company profile, philosophy, and history.
+  - History Timeline:
+    - 2018: Foundation Established
+    - 2019: Advanced Lab Launch
+    - 2024: ESG Alignment & Scaling
+  - Leadership Members: Mitul Patel (Founder & Chairman) and Meet Patel (Managing Director).
+
+* PRODUCTS CATALOG ('/products' and '/products/[id]')
+  - Details four key mineral products: China Clay, Kaolin, Calcined Clay, and Washed Clay.
+  - Renders detailed technical specification tables containing chemical formulas
+    (Al2O3, SiO2, Fe2O3, TiO2, LOI) and physical grade metrics.
+
+* ACTIVE SECTORS ('/industries')
+  - Outlines the primary industries served: Vitrified Tiles and Sanitaryware.
+
+* GLOBAL EXPORTS ('/export')
+  - Features an interactive cargo weight and container calculator.
+  - Displays export options: 50kg Laminated Sacks and 1.0 - 1.25 MT Jumbo Sacks.
+  - Includes an interactive SVG World Map highlighting maritime corridors from
+    Mundra Port to destinations globally.
+
+* MEDIA GALLERY ('/gallery')
+  - Masonry visual layout representing Mining, Processing, Laboratory, Packaging,
+    and Logistics.
+  - Interactive Modal Lightbox: Pauses Lenis scroll to lock page movements when
+    inspecting images.
+  - Includes a customized digital sack marking overlay on the packaging image 
+    highlighting "1 MT Ultra-White China Clay".
+
+* CONTACT & SUPPORT ('/contact')
+  - Contains HQ location details: Near Khakhrechi Chowkdi, Morbi, Gujarat.
+  - Actionable tel: and mailto: desk anchors for direct click-to-dial and mailing.
+  - Dynamic client inquiries submission form.
+
+
+6. BRAND SPECIFICATIONS
+------------------------------------------------------------------------
+* Company Name: Sarathi Micron LLP
+* Established: 2018 (Est. 2018)
+* Factory Address: Near Khakhrechi Chowkdi, Halvad–Maliya Highway, Village Aniyari,
+                  Morbi – 363630, Gujarat, India.
+* Official Contact Phone: +91 99043 73330
+* Official Contact Email: sarathimicron@gmail.com
+========================================================================
